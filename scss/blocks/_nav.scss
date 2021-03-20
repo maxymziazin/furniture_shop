@@ -1,0 +1,57 @@
+.nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $grey-1;
+
+  &__item {
+    position: relative;
+    padding-right: 28px;
+    margin-right: 40px;
+    cursor: pointer;
+
+    &:last-child {
+      padding-right: 0;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    i {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      left: -5px;
+      z-index: 200;
+      width: 132px;
+
+      a {
+        display: block;
+        padding: 10px 5px;
+        color: inherit;
+        background-color: #f9f1e7;
+        transition: $transition;
+
+        &:hover {
+          background-color: darken(#f9f1e7, 10%);
+        }
+      }
+    }
+
+    &:hover ul {
+      display: block;
+    }
+  }
+}

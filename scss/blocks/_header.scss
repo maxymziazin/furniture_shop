@@ -1,0 +1,32 @@
+.header {
+  background: linear-gradient(to right, #f9f1e7 64%, #fcf8f3 36%);
+  padding-top: 43px;
+
+  &__top {
+    margin-bottom: 58px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 41px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slider {
+    padding-top: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
