@@ -1,0 +1,156 @@
+.furniture-slider {
+  max-width: 966px;
+  margin: 0 auto;
+  transform: translateX(100px);
+
+  &__item {
+    margin: 0px 16px;
+    position: relative;
+  }
+
+  img {
+    max-width: 934px;
+    width: 100%;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  &__card {
+    max-width: 294px;
+    width: 100%;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: $grey-1;
+  }
+
+  &__text {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-2;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: $grey-1;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: $grey-1;
+
+    i {
+      transition: $transition;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    top: -68px;
+    right: 18px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $orange;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+
+    &.slick-prev {
+      right: 78px;
+
+      i {
+        position: relative;
+        left: -2px;
+      }
+    }
+
+    &.slick-next {
+      i {
+        position: relative;
+        left: 2px;
+      }
+    }
+
+    i {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: auto;
+
+    li {
+      margin: 0px 8px;
+
+      button {
+        position: relative;
+        padding: 0;
+        width: 27px;
+        height: 27px;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: transparent;
+        font-size: 0;
+        color: transparent;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 7px;
+          width: 11px;
+          height: 11px;
+          background-color: $grey-5;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .slick-active {
+      button {
+        border-color: $orange;
+
+        &::after {
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}

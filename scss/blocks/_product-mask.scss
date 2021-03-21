@@ -1,0 +1,58 @@
+.product-mask {
+  padding: 175px 41px 41px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  opacity: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grey-1;
+    opacity: 0.72;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 24px;
+    border: none;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 0px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

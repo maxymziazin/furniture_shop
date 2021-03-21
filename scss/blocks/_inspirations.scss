@@ -1,0 +1,27 @@
+.inspirations {
+  background-color: #fcf8f3;
+  padding: 44px 0;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 378px;
+    margin-right: 86px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-2;
+    margin-bottom: 24px;
+  }
+}

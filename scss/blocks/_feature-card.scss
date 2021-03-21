@@ -1,0 +1,27 @@
+.feature-card {
+  display: flex;
+  // align-items: center;
+
+  &__img {
+    position: relative;
+    top: 6px;
+    margin-right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: $grey-1;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-3;
+  }
+}
