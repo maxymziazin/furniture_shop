@@ -8,8 +8,14 @@
   }
 
   &__left {
-    max-width: 378px;
-    margin-right: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 464px;
+    padding-right: 86px;
+    position: relative;
+    z-index: 10;
+    background-color: #fcf8f3;
   }
 
   &__title {

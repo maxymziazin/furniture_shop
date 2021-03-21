@@ -1,74 +1,33 @@
-.furniture-slider {
-  max-width: 966px;
-  margin: 0 auto;
-  transform: translateX(100px);
+.multi-slider {
+  margin-bottom: 70px;
 
   &__item {
     margin: 0px 16px;
-    position: relative;
   }
 
-  img {
-    max-width: 934px;
+  &__img {
     width: 100%;
-  }
-
-  .slick-list {
-    overflow: visible;
-  }
-
-  &__card {
-    max-width: 294px;
-    width: 100%;
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    padding: 24px;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(31px);
+    margin-bottom: 16px;
   }
 
   &__title {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 120%;
     color: $grey-1;
   }
 
-  &__text {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 16px;
+  &__date {
+    font-weight: normal;
+    font-size: 14px;
     line-height: 150%;
-    color: $grey-2;
-  }
-
-  &__price {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 150%;
-    color: $grey-1;
-  }
-
-  &__arrow {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    color: $grey-1;
-
-    i {
-      transition: $transition;
-
-      &:hover {
-        color: $orange;
-      }
-    }
+    color: $grey-3;
   }
 
   ul {
     position: absolute;
-    top: -68px;
+    bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

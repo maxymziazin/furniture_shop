@@ -1,12 +1,123 @@
 .room-slider {
-  max-width: 396px;
+  max-width: 376px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__card {
+    opacity: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    padding: 32px;
+    max-width: 217px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(3px);
+    transition: $transition;
+  }
+
+  &__category {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-2;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: $grey-1;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: -48px;
+    width: 48px;
+    height: 48px;
+    background-color: $orange;
+    font-size: 18px;
+    color: $white;
+    transition: $transition;
+    outline: none;
+
+    &:hover {
+      background-color: darken($orange, 15%);
+    }
+  }
+
+  .slick-current {
+    img {
+      transition: $transition;
+      transform: scale(1) translateX(0);
+    }
+
+    .room-slider__card {
+      opacity: 1;
+    }
+  }
 
   img {
-    max-width: 372px;
-    width: 100%;
+    cursor: pointer;
+    transform: scale(0.8) translateY(-10%);
+    transition: $transition;
   }
 
   .slick-list {
     overflow: visible;
+  }
+
+  ul {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    transform: translateX(122%);
+    display: flex;
+    width: auto;
+
+    li {
+      margin: 0px 8px;
+
+      button {
+        position: relative;
+        padding: 0;
+        width: 27px;
+        height: 27px;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: transparent;
+        font-size: 0;
+        color: transparent;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 7px;
+          width: 11px;
+          height: 11px;
+          background-color: $grey-5;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .slick-active {
+      button {
+        border-color: $orange;
+
+        &::after {
+          background-color: $orange;
+        }
+      }
+    }
   }
 }

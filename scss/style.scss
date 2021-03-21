@@ -35,6 +35,18 @@ li {
   width: 100%;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.p8 {
+  padding: 8px;
+}
+
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/nav";
@@ -43,6 +55,7 @@ li {
 @import "blocks/hero-content";
 @import "blocks/btn";
 @import "blocks/furniture-slider";
+@import "blocks/slider-btn";
 @import "blocks/features";
 @import "blocks/feature-card";
 @import "blocks/title";
@@ -52,9 +65,9 @@ li {
 @import "blocks/product-mask";
 @import "blocks/inspirations";
 @import "blocks/room-slider";
-// @import "blocks";
-// @import "blocks";
-// @import "blocks";
+@import "blocks/tips-tricks";
+@import "blocks/multi-slider";
+@import "blocks/share";
 // @import "blocks";
 // @import "blocks";
 // @import "blocks";

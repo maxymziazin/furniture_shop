@@ -31,7 +31,8 @@
   }
 
   &--small {
-    padding: 12px 40px;
-    width: auto;
+    padding: 12px;
+    max-width: 176px;
+    font-size: 16px;
   }
 }

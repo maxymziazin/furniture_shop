@@ -1,4 +1,6 @@
 $(function () {
+  // Furniture slider
+
   let $furnitureSlider = $("#furniture-slider");
 
   $furnitureSlider.slick({
@@ -7,10 +9,12 @@ $(function () {
     slidesToScroll: 1,
     dots: true,
     prevArrow:
-      '<button type="button" class="furniture-slider__btn slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      '<button type="button" class="slider-btn slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow:
-      '<button type="button" class="furniture-slider__btn slick-next"><i class="fas fa-chevron-right"></i></button>',
+      '<button type="button" class="slider-btn slick-next"><i class="fas fa-chevron-right"></i></button>',
   });
+
+  // Room slider
 
   let $roomSlider = $("#room-slider");
 
@@ -19,5 +23,45 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: true,
+  });
+
+  let count = 0;
+
+  $roomSlider.on("afterChange", function (event, slick, currentSlide) {
+    if (currentSlide > count) {
+      let $prev = $(this).find(`[data-slick-index='${currentSlide - 1}']`);
+      $prev.animate(
+        {
+          opacity: 0,
+        },
+        150
+      );
+      count++;
+    } else if (currentSlide < count) {
+      let $current = $(this).find(`[data-slick-index='${currentSlide}']`);
+      $current.animate(
+        {
+          opacity: 1,
+        },
+        150
+      );
+      count--;
+    }
+  });
+
+  // Multi slider
+
+  let $multiSlider = $("#multi-slider");
+
+  $multiSlider.slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    prevArrow:
+      '<button type="button" class="slider-btn slider-btn--light slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button type="button" class="slider-btn slider-btn--light slick-next"><i class="fas fa-chevron-right"></i></button>',
   });
 });
