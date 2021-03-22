@@ -13,12 +13,20 @@
   transition: $transition;
   z-index: 10;
 
+  @media ($large) {
+    right: 115px;
+  }
+
   &:hover {
     background-color: darken($orange, 10%);
   }
 
   &.slick-prev {
     right: 78px;
+
+    @media ($large) {
+      right: 175px;
+    }
 
     i {
       position: relative;

@@ -3,8 +3,17 @@
   display: flex;
   align-items: center;
 
+  @media ($medium) {
+    margin-left: 0;
+    order: 4;
+  }
+
   &__item {
     margin-right: 34px;
+
+    @media ($medium) {
+      margin-right: 24px;
+    }
 
     &:last-child {
       margin-right: 0;

@@ -1,9 +1,18 @@
 .search-bar {
   padding: 0 44px;
+  margin: 0 20px;
   max-width: 473px;
   width: 100%;
   background-color: $white;
   position: relative;
+
+  @media ($medium) {
+    order: 3;
+  }
+
+  @media ($extra-small) {
+    display: none;
+  }
 
   &__input {
     height: 45px;
@@ -24,5 +33,15 @@
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
+  }
+
+  &--small {
+    display: none;
+
+    @media ($extra-small) {
+      display: block;
+      max-width: 100%;
+      margin: 0;
+    }
   }
 }

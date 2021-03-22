@@ -8,12 +8,34 @@
   background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(31px);
 
+  @media ($medium) {
+    max-width: 384px;
+    padding: 40px;
+  }
+
+  @media ($small) {
+    max-width: 284px;
+    padding: 20px;
+  }
+
+  @media ($extra-small) {
+    display: none;
+  }
+
   &__title {
     margin-bottom: 16px;
     font-weight: bold;
     font-size: 56px;
     line-height: 120%;
     color: $grey-1;
+
+    @media ($medium) {
+      font-size: 46px;
+    }
+
+    @media ($small) {
+      font-size: 36px;
+    }
   }
 
   &__text {
@@ -22,5 +44,10 @@
     font-size: 20px;
     line-height: 150%;
     color: $grey-3;
+
+    @media ($small) {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
   }
 }

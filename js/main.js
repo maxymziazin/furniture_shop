@@ -1,4 +1,17 @@
 $(function () {
+  // Burger-menu
+
+  let $burger = $("#burger");
+  let $nav = $("#nav");
+  let ms = 300;
+
+  $burger.on("click", function (event) {
+    event.preventDefault();
+
+    $burger.toggleClass("active");
+    $nav.slideToggle(ms);
+  });
+
   // Furniture slider
 
   let $furnitureSlider = $("#furniture-slider");
@@ -13,6 +26,18 @@ $(function () {
     nextArrow:
       '<button type="button" class="slider-btn slick-next"><i class="fas fa-chevron-right"></i></button>',
   });
+
+  // ???????????
+
+  $(".product-mask__btn").on("click", function (event) {
+    event.preventDefault();
+  });
+
+  $(".product-mask__actions")
+    .find("a")
+    .on("click", function (event) {
+      event.preventDefault();
+    });
 
   // Room slider
 

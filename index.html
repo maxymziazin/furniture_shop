@@ -21,7 +21,10 @@
           <div class="header__wrapper">
             <div class="header__inner">
               <a class="header__logo" href="#">Funiro.</a>
-              <nav class="nav">
+              <button class="burger" id="burger">
+                <span class="burger__item"></span>
+              </button>
+              <nav class="nav" id="nav">
                 <div class="nav__item">
                   Products<i class="fas fa-chevron-down"></i>
                   <ul>
@@ -73,6 +76,14 @@
               <a class="btn" href="#">Shop Now</a>
             </div>
           </div>
+          <form class="search-bar search-bar--small" action="/">
+            <i class="fas fa-search"></i>
+            <input
+              class="search-bar__input"
+              type="text"
+              placeholder="Search for minimalist chair"
+            />
+          </form>
         </div>
       </div>
       <div class="header__slider">
@@ -188,7 +199,7 @@
                 <h3 class="product-card__title">Syltherine</h3>
                 <div class="product-card__text">Stylish cafe chair</div>
                 <div class="product-card__price">
-                  Rp 2.500.000 <span>Rp 3.500.000</span>
+                  Rp 2.500.000 <span>Rp&nbsp;3.500.000</span>
                 </div>
               </div>
               <div class="product-label product-label--discount">-30%</div>
@@ -245,7 +256,7 @@
                 <h3 class="product-card__title">Lolito</h3>
                 <div class="product-card__text">Luxury big sofa</div>
                 <div class="product-card__price">
-                  Rp 7.000.000 <span>Rp 14.000.000</span>
+                  Rp 7.000.000 <span>Rp&nbsp;14.000.000</span>
                 </div>
               </div>
               <div class="product-label product-label--discount">-50%</div>
@@ -358,7 +369,7 @@
                 <h3 class="product-card__title">Pingky</h3>
                 <div class="product-card__text">Cute bed set</div>
                 <div class="product-card__price">
-                  Rp 7.000.000 <span>Rp 14.000.000</span>
+                  Rp 7.000.000 <span>Rp&nbsp;14.000.000</span>
                 </div>
               </div>
               <div class="product-label product-label--discount">-50%</div>
@@ -412,7 +423,7 @@
       </div>
     </section>
 
-    <section class="inspirations">
+    <!--<section class="inspirations">
       <div class="container">
         <div class="inspirations__inner">
           <div class="inspirations__left">
@@ -649,7 +660,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>

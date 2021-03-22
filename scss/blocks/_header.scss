@@ -2,13 +2,25 @@
   background: linear-gradient(to right, #f9f1e7 64%, #fcf8f3 36%);
   padding-top: 43px;
 
+  @media ($extra-small) {
+    padding: 23px 0px;
+  }
+
   &__top {
     margin-bottom: 58px;
+
+    @media ($extra-small) {
+      margin-bottom: 38px;
+    }
   }
 
   &__inner {
     display: flex;
     align-items: center;
+
+    @media ($medium) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -17,10 +29,19 @@
     font-size: 24px;
     line-height: 29px;
     color: $black;
+
+    @media ($medium) {
+      order: 2;
+      margin-right: 0;
+    }
   }
 
   &__wrapper {
     position: relative;
+
+    @media ($extra-small) {
+      margin-bottom: 20px;
+    }
   }
 
   &__slider {
