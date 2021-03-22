@@ -1028,7 +1028,7 @@ li {
 }
 
 .share__inner {
-  margin-bottom: 85px;
+  margin-bottom: 82px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,4 +1059,158 @@ li {
 .share img:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+.footer__inner {
+  padding: 80px 0px 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer__item {
+  padding: 0px 10px;
+}
+
+.footer__item:nth-child(1) {
+  width: 26%;
+}
+
+.footer__item:nth-child(2) {
+  width: 15%;
+}
+
+.footer__item:nth-child(3) {
+  width: 14%;
+}
+
+.footer__item:nth-child(4) {
+  width: 21%;
+}
+
+.footer__item:nth-child(5) {
+  width: 24%;
+}
+
+.footer__title {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__link {
+  margin-bottom: 16px;
+}
+
+.footer__link:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.contacts {
+  max-width: 250px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.contacts__text {
+  margin-bottom: 16px;
+}
+
+.contacts__link {
+  margin-bottom: 16px;
+}
+
+.contacts__link:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__link a {
+  color: inherit;
+}
+
+.contacts__link a:hover {
+  text-decoration: underline;
+}
+
+.contacts__link a i {
+  margin-right: 10px;
+}
+
+.email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email-form__input {
+  margin-right: 4px;
+  padding-left: 12px;
+  display: block;
+  max-width: 242px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #f4f5f7;
+}
+
+.email-form__btn {
+  max-width: 45px;
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e89f71;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.email-form__btn:hover {
+  background-color: #dd722f;
+}
+
+.email-form__btn i {
+  color: #ffffff;
+  font-size: 18px;
 }

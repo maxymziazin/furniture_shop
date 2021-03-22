@@ -1,0 +1,31 @@
+.contacts {
+  max-width: 250px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: $grey-2;
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
