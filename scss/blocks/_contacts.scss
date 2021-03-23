@@ -7,10 +7,18 @@
 
   &__text {
     margin-bottom: 16px;
+
+    @media ($extra-small) {
+      margin-bottom: 14px;
+    }
   }
 
   &__link {
     margin-bottom: 16px;
+
+    @media ($extra-small) {
+      margin-bottom: 14px;
+    }
 
     &:last-child {
       margin-bottom: 0;

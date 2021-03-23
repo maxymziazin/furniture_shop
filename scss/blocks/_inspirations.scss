@@ -3,8 +3,16 @@
   padding: 44px 0;
   overflow: hidden;
 
+  @media ($extra-small) {
+    padding: 44px 0 66px;
+  }
+
   &__inner {
     display: flex;
+
+    @media ($small) {
+      display: block;
+    }
   }
 
   &__left {
@@ -16,11 +24,24 @@
     position: relative;
     z-index: 10;
     background-color: #fcf8f3;
+
+    @media ($medium) {
+      padding: 0px 43px;
+    }
+
+    @media ($small) {
+      padding: 0px 15px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
     margin-bottom: 8px;
     text-align: left;
+
+    @media ($small) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -29,5 +50,12 @@
     line-height: 150%;
     color: $grey-2;
     margin-bottom: 24px;
+  }
+
+  &__btn {
+    @media ($small) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
   }
 }

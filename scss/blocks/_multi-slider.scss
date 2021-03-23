@@ -33,6 +33,10 @@
     display: flex;
     width: auto;
 
+    @media ($large) {
+      bottom: -60px;
+    }
+
     li {
       margin: 0px 8px;
 

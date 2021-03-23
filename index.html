@@ -15,10 +15,10 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__top">
         <div class="container">
-          <div class="header__wrapper">
+          <div class="header__wrapper" id="header-wrapper">
             <div class="header__inner">
               <a class="header__logo" href="#">Funiro.</a>
               <button class="burger" id="burger">
@@ -423,7 +423,7 @@
       </div>
     </section>
 
-    <!--<section class="inspirations">
+    <section class="inspirations">
       <div class="container">
         <div class="inspirations__inner">
           <div class="inspirations__left">
@@ -434,7 +434,9 @@
               Our designer already made a lot of beautiful prototipe of rooms
               that inspire you
             </div>
-            <a class="btn btn--small" href="#">Explore More</a>
+            <a class="btn btn--small inspirations__btn" href="#"
+              >Explore More</a
+            >
           </div>
           <div class="inspirations__right">
             <div class="room-slider" id="room-slider">
@@ -551,8 +553,10 @@
     </section>
 
     <section class="share">
-      <h3 class="share__subtitle">Share your setup with</h3>
-      <h2 class="title share__title">#FuniroFurniture</h2>
+      <div class="container">
+        <h3 class="share__subtitle">Share your setup with</h3>
+        <h2 class="title share__title">#FuniroFurniture</h2>
+      </div>
       <div class="share__inner">
         <div class="share__main-box">
           <div class="share__subbox align-end">
@@ -652,7 +656,11 @@
           <div class="footer__item">
             <h3 class="footer__title">Stay Updated</h3>
             <form class="email-form" action="/">
-              <input class="email-form__input" type="email" placeholder="Enter your email" />
+              <input
+                class="email-form__input"
+                type="email"
+                placeholder="Enter your email"
+              />
               <button class="email-form__btn" type="submit">
                 <i class="fas fa-paper-plane"></i>
               </button>
@@ -660,7 +668,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>

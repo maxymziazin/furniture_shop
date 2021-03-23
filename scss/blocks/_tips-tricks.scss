@@ -1,6 +1,10 @@
 .tips-tricks {
   padding: 44px 0;
 
+  @media ($extra-small) {
+    padding: 44px 0 33px;
+  }
+
   &__title {
     margin-bottom: 32px;
   }

@@ -88,5 +88,32 @@ $(function () {
       '<button type="button" class="slider-btn slider-btn--light slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow:
       '<button type="button" class="slider-btn slider-btn--light slick-next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          prevArrow:
+            '<button type="button" class="slider-btn slider-btn--light slick-prev"><i class="fas fa-chevron-left"></i></button>',
+          nextArrow:
+            '<button type="button" class="slider-btn slider-btn--light slick-next"><i class="fas fa-chevron-right"></i></button>',
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "30px",
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   });
 });
